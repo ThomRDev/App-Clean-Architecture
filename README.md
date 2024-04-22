@@ -14,7 +14,7 @@ No importa que la bd de datos cambie. O se le agregue mas o menos cambios en las
   ![alt](./img/use-cases.PNG)
 - Presentacion: Lo mas cercano a los que consumiran nuestro endpoints
   ![alt](./img/presentation.PNG)
-- Domain: reglas que gobiernan toda la aplicacion. (aqui estaran los use-cases, adaptadores, repositiorios etc). no debe de tener dependencias externas
+- Domain: reglas que gobiernan toda la aplicacion. (aqui estaran los use-cases, adaptadores, repositiorios etc). no debe de tener dependencias externas. Reglas de negocio de la aplicacion. Codigo propio de nosotros.
 - infrastructure: Se crearan las implemetnaciones de los Data Sources, Repositorios. Mappers
 ![alt](./img/resumen.PNG)
 - DTO: Data transfer Object, objetos que serviran como mensajes de layer a layer

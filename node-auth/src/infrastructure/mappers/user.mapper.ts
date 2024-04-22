@@ -1,5 +1,5 @@
-import { UserEntity } from '../entities/user.entity';
-import { CustomError } from '../errors/custom.error';
+import { UserEntity } from '@/domain/entities/user.entity';
+import { CustomError } from '@/domain/errors/custom.error';
 
 // convert to UserModel(DB) to UserEntity (app)
 export class UserMapper {
@@ -25,8 +25,5 @@ export class UserMapper {
       roles
     );
   }
-
-
-
 
 }
