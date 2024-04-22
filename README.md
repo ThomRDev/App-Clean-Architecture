@@ -10,7 +10,7 @@ LA comunicación sera de los circulos exteriores(layer) a los layer inferiores p
 a lo que grabamos en BD. Sin embargo es nuestra propia implementacion para la aplicacion. Deberia ser Agnostico.
 No importa que la bd de datos cambie. O se le agregue mas o menos cambios en las tablas o colecciones de la BD.
   ![alt](./img/entities.PNG)
-- Casos de uso: (Crear usuario, enviar correo, validar informacion, login de usuario) Especificamente realizar una tarea
+- Casos de uso: (Crear usuario, enviar correo, validar informacion, login de usuario) Especificamente realizar una tarea (actividad o accion)
   ![alt](./img/use-cases.PNG)
 - Presentacion: Lo mas cercano a los que consumiran nuestro endpoints
   ![alt](./img/presentation.PNG)
