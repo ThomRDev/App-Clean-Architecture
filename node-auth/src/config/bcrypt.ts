@@ -1,5 +1,6 @@
 import { compareSync, hashSync } from 'bcryptjs';
 
+// patron de diseño bcrypt
 export class BcryptAdapter {
 
   static hash( password: string ): string {

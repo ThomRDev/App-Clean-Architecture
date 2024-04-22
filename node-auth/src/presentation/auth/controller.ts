@@ -1,5 +1,6 @@
 import { Request, Response } from "express"
 import { AuthRepository, CustomError, LoginUser, LoginUserDto, RegisterUser, RegisterUserDto } from "@/domain"
+import { UserModel } from "@/data/mongodb";
 
 export class AuthController {
 
@@ -41,18 +42,18 @@ export class AuthController {
 
 
 // mal
-  // getUsers = (req: Request, res: Response ) => {
+  getUsers = (req: Request, res: Response ) => {
     
-  //   UserModel.find()
-  //     .then( users => {
-  //       res.json({
-  //         // users,
-  //         user: req.body.user
-  //       }) 
-  //     })
-  //     .catch(()=> res.status(500).json({ error: 'Internal server error' }))
+    UserModel.find()
+      .then( users => {
+        res.json({
+          // users,
+          user: req.body.user
+        }) 
+      })
+      .catch(()=> res.status(500).json({ error: 'Internal server error' }))
 
-  // }
+  }
 
 
 }

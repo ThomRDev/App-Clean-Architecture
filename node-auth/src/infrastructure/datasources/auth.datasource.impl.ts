@@ -9,6 +9,7 @@ type CompareFunction = (password: string, hashed: string) => boolean;
 export class AuthDataSourceImpl extends AuthDataSource{
 
   constructor(
+    // por defecto si no viene nada se asigna
     private readonly hashPassword: HashFunction = BcryptAdapter.hash,
     private readonly comparePassword: CompareFunction = BcryptAdapter.compare,
   ) {
