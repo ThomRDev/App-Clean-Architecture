@@ -10,19 +10,25 @@ Propuesta por Robert C. Martin. (Uncle Bob)
 
 ![image](https://github.com/ThomRDev/App-Clean-Architecture/assets/77131514/90f18dc1-8e55-472d-a433-7d877a1e49ee)
 
-Es una arquitectura basada en capas que separa(desacopla) la logica del negocio[Product, ProduectSearcher, ProductRepository] de la infraestructura y/o persistencia[Mysql, ProductController].
+Clean architecure es una arquitectura basada en capas que separa(desacopla) la logica del negocio[Product, ProduectSearcher, ProductRepository] de la infraestructura y/o persistencia[Mysql, ProductController].
+Separa la capa del dominio de la infraestructura
 
 En MVC, la logica de dominio esta acoplada a la infra estructura. Es decir que el modelo sabe de que base de datos se esta usando.
 
 Si se usa Clean Architecture con un framework las mismas caracteristicas del framework seria parte de la capa de infraestrcutra y asi lo separamos de la logica de dominio. Con ello
-el cambio de framework o la actualizacion del mismo es mucho mas facil. Lo mismo que migrar de una data base a otra.
+el cambio de framework o la actualizacion del mismo es mucho mas facil. Lo mismo que migrar de una data base a otra. Desacoplarnos del framework.
 
 Diferentes tipos de Clean arquitecures:
  - Hexagonal (Tres capas) [Infra, Aplicacion, Dominio]. Con la regla de dependencia de fuera hacia adentro Infra(I/O en nuestro sistema, frameworks, librerias externas, Base de datos) -> Aplicacion(casos de uso) -> Dominio(entidades, value object) 
  - Cebolla
  - Screamming
  - DCI
- - BCE by Ivar Jacobson from his book Object Oriented Software 
+ - BCE by Ivar Jacobson from his book Object Oriented Software
+
+Pilares de la arquitectura Hexagonal:
+- Manteneabilidad
+- Escalabilidad
+- Testeabilidad
 
 LA comunicación sera de los circulos exteriores(layer) a los layer inferiores pero no viceversa.
 
